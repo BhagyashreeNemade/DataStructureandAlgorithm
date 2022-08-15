@@ -1,6 +1,5 @@
 ﻿namespace DataStructureandAlgorithm
 {
-
     class Program
     {
         static void Main(String[] args)
@@ -10,7 +9,7 @@
             {
                 Console.WriteLine("Welcome To Datastructures and Algorithms");
                 Console.WriteLine("1.Permutation Using Recursion\n2.BinarySearch\n3.InsertionSort\n4.BubbleSort" +
-                    "\n5.MergeSort\n6.Anagrams\n7.PrimeNumber");
+                    "\n5.MergeSort\n6.Anagrams\n7.PrimeNumber\n8.AnagramAndPalindromes");
                 Console.WriteLine("Enter Your Option");
                 int num = Convert.ToInt32(Console.ReadLine());
                 switch (num)
@@ -43,6 +42,12 @@
                         PrimeNumbers primenumbers = new PrimeNumbers();
                         primenumbers.primeNumbers();
                         break;
+                    case 8:
+                        AnagramAndPalindromeNumber anagramandpalindromenumber = new AnagramAndPalindromeNumber();
+                        anagramandpalindromenumber.anagramAndPalindrome();
+                        break;
+
+
 
                     default:
                         Console.WriteLine("-------Enter the valid option---");
